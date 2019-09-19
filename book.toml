@@ -1,0 +1,6 @@
+[book]
+authors = ["tom"]
+language = "pl"
+multilingual = false
+src = "src"
+title = "Whitepaper One Day Run"

@@ -1,0 +1,17 @@
+# Spis treści
+
+[alternatywy](alternatywy.md)
+[b2b](b2b.md)
+[book](book.md)
+[golden-circle](golden-circle.md)
+[Hardware](Hardware.md)
+[klienci](klienci.md)
+[korzysci](korzysci.md)
+[Metodologia](Metodologia.md)
+[OneDayRun](OneDayRun.md)
+[polaczenia](polaczenia.md)
+[praktyka](praktyka.md)
+[prezentacja](prezentacja.md)
+[Software](Software.md)
+[TECHNOLOGIE](TECHNOLOGIE.md)
+[wdrozenie](wdrozenie.md)
