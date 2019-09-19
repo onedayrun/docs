@@ -1,0 +1,476 @@
+<!DOCTYPE HTML>
+<html lang="pl" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Whitepaper One Day Run</title>
+        
+        <meta name="robots" content="noindex" />
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body class="light">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="alternatywy.html">alternatywy</a></li><li class="affix"><a href="b2b.html">b2b</a></li><li class="affix"><a href="book.html">book</a></li><li class="affix"><a href="golden-circle.html">golden-circle</a></li><li class="affix"><a href="Hardware.html">Hardware</a></li><li class="affix"><a href="klienci.html">klienci</a></li><li class="affix"><a href="korzysci.html">korzysci</a></li><li class="affix"><a href="Metodologia.html">Metodologia</a></li><li class="affix"><a href="OneDayRun.html">OneDayRun</a></li><li class="affix"><a href="polaczenia.html">polaczenia</a></li><li class="affix"><a href="praktyka.html">praktyka</a></li><li class="affix"><a href="prezentacja.html">prezentacja</a></li><li class="affix"><a href="Software.html">Software</a></li><li class="affix"><a href="TECHNOLOGIE.html">TECHNOLOGIE</a></li><li class="affix"><a href="wdrozenie.html">wdrozenie</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Whitepaper One Day Run</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2><a class="header" href="#alternatywy-dla-one-day-run" id="alternatywy-dla-one-day-run">Alternatywy dla One Day Run</a></h2>
+<p>Wydawać by się mogło, że są oczywiste alternatywy w postaci:</p>
+<ul>
+<li>
+<p>systemów, gdzie sprzedaje sie i kupuje oprgroamwoanie</p>
+</li>
+<li>
+<p>portale typu freelance, gdzie daje sie zlecenia</p>
+</li>
+<li>
+<p>Software house, wynajmujące pracowników na godziny</p>
+</li>
+<li>
+<p>Frameworki, rozwiązania technologiczne, pozwalające modułowo budować</p>
+</li>
+</ul>
+<p>Każde z tych rozwiązań, dba tylko o jedną stronę:
++ Technologię - producentów narzędzi
++ Kupujących rozwiązanie - klientów zlecających
++ Realizujących - Developerów
++ Sprzedających - Software House</p>
+<p>W One Day Run:</p>
+<p>chodzi o uzyskanie najszybszym, mierzalnym sposobem, oczekiwanego rezultatu.</p>
+<h1><a class="header" href="#korzyści-b2b" id="korzyści-b2b">korzyści b2b</a></h1>
+<p>Ustandaryzwoane zasady pracy wewnątrz firmy
+mogą pomóc we współpracy z na zewnątrz z podobnym profilem działalności,
+gdzie są podobne rozwiązania realizacji projektów.</p>
+<h2><a class="header" href="#franczyza-w-it" id="franczyza-w-it">Franczyza w IT?</a></h2>
+<p>Czy to nie żart?
+to nie jest sklep, tylko fabryka w fabryce, jak niby to zrobić?</p>
+<p>Firma jako fabryka rozwiązań i 
+każdy programista jest samozarządzalną fabryką, która produkuje kod, który następnie trafia do 
+innych ludzi, działów i dalej jest przetwarzany,
+Proces tworzenia nie jest prosty, wymagana jest znajomość technologii, umiejętność analitycznego myślenia.
+to tak skomplikowane..</p>
+<h2><a class="header" href="#do-czego-się-sprowadza" id="do-czego-się-sprowadza">Do czego się sprowadza</a></h2>
+<p>Różnica pomiędzy tworzeniem od początku, a wytwarzaniem wykorzystując półprodukty jest taka,
+że przy półproduktach nie trzeba znać technologii jej wytwarzania.</p>
+<h2><a class="header" href="#porównanie" id="porównanie">Porównanie</a></h2>
+<p>Porównując to do branży budowlanej, trzeba by każdy murarz miał wiedzę i umiejętności o metodach
+produkcji cementu.</p>
+<p>Dlatego ODR jest dla każdego kto ma wiedzę ogólną a nawet jeśli jej nie ma, to wystarczy mały kurs </p>
+<h2><a class="header" href="#przykład" id="przykład">Przykład</a></h2>
+<p>jeśli ten system będzie wdrożony w firmie
+to jeśli ktoś inny też ma go wdrożone
+to wspołraca miedzy firmami będzie prosta
+bo zasaday współracy okreśła ODR</p>
+<h2><a class="header" href="#książka" id="książka">Książka</a></h2>
+<p>One Day Run, rewolucji w szybkosći realizacji projektów</p>
+<p>delegowanie
+koncepcja
+prototypowanie</p>
+<p>łatwość współpracy w międzynarodowym zespole</p>
+<p>Filozofia modelu „Dlaczego, jak, co” nie jest nowa. 
+Model zarządzania St. Gallen (SGMM) jako systemowa teoria zarządzania opiera się zasadniczo 
+na identycznej strukturze. </p>
+<p>W SGMM kierownictwo i zarządzanie firmą mają trzy poziomy.</p>
+<pre><code>Zarządzanie normatywne (-&gt; Dlaczego)
+Zarządzanie strategiczne (-&gt; Jak)
+Zarządzanie operacyjne (-&gt; Co)
+</code></pre>
+<p>Model zarządzania St. Gallen został po raz pierwszy opublikowany w 1972 roku i od tego czasu jest stale rozwijany. Obecnie SGMM jest czwartej generacji.</p>
+<p>Idea Złotego Kręgu firmy Sinek jest próbą wyjaśnienia, dlaczego niektóre osoby i organizacje są szczególnie dobre. 
+Neurobiologia stojąca za ideą złotego koła polega na komunikowaniu się z tymi częściami mózgu, które
+są emocjami, zachowaniem i podejmowaniem decyzji.</p>
+<h2><a class="header" href="#specjalista-what-co" id="specjalista-what-co">Specjalista, What, Co</a></h2>
+<p>Jest to dość łatwe dla każdego lidera lub organizacji wyartykułować &quot;Co oni czw Mogą to być produkty sprzedawane przez firmę lub oferowane przez nią usługi. Dla osoby fizycznej byłby to ich tytuł zawodowy. Sinek twierdzi, że wiadomości „What” dotyczą tylko kory nowej - racjonalnej części naszego mózgu. Jego argumentem jest to, że ta część mózgu to mniej niż mózg limbiczny: część, w której „dlaczego” i „jak” osiągnęły lepsze wyniki. Ludzie i organizacje odnoszące sukcesy wyrażają, dlaczego robią więcej niż tylko skupiają się na tym, co robią.
+Niektórzy krytycy twierdzą, że model Sinka tak naprawdę odzwierciedla pasję. Namiętni liderzy i namiętne organizacje autentycznie wyrażają entuzjazm i entuzjazm, i to właśnie one ich inspirują. Inni krytycy twierdzą, że model Sinka sugeruje, że ludzie w ogóle nie używają swojego powodu przy podejmowaniu decyzji, co jest dyskusyjne.</p>
+<h2><a class="header" href="#co---co-robimy" id="co---co-robimy">Co - co robimy?</a></h2>
+<p>W końcu definiujesz konkretne działania i działania w „co”. 
+Ze względu na koncentryczną strukturę modelu „dlaczego, jak, 
+co”, „co” wiąże się z wyższym celem i twoim podejściem.</p>
+<p>W kontekście przedsiębiorczości „co” opisuje konkretne produkty i usługi oferowane przez Twoją firmę.
+Ten poziom operacyjny jest znacznie łatwiejszy do uchwycenia, 
+a przede wszystkim widoczny. 
+Być może dlatego tak wiele firm próbuje się zdefiniować i wyróżnić poprzez „co”.
+W ten sposób tracą szansę na bardziej 
+niż wyraźne odróżnienie się od konkurencji z dobrym „dlaczego”.</p>
+<p>Odniesienie - model zarządzania St. Gallen</p>
+<h2><a class="header" href="#manager-how-jak" id="manager-how-jak">Manager, How, jak</a></h2>
+<p>Czynniki „Jak” organizacji mogą mieć różne mocne strony lub wartości. Według Sinka przesłanie „jak” jest sposobem na komunikację z mózgiem limbicznym - ważną częścią rządzącą zachowaniem i emocjami. Oprócz „Jak”.</p>
+<h2><a class="header" href="#jak---jak-dokładnie" id="jak---jak-dokładnie">Jak - jak dokładnie?</a></h2>
+<p>„W jaki sposób” opisujesz swoje podejście do osiągnięcia celu.
+Na tym poziomie znajdziesz strategie i modele procesów, które 
+utorują drogę do celu i zdefiniują trasę dla „dlaczego”. 
+Jeśli „dlaczego” jest ukrytym skarbem, to „jak” jest twoją mapą skarbów, że tak powiem.</p>
+<p>W kontekście przedsiębiorczości „jak” określa procesy o wartości dodanej,
+model biznesowy i organizację. Na tym strategicznym poziomie określasz, 
+w jaki sposób Twoja firma dociera do „dlaczego”.</p>
+<h2><a class="header" href="#przedsiębiorca-why-dlaczego-i-po-co" id="przedsiębiorca-why-dlaczego-i-po-co">Przedsiębiorca: Why, dlaczego i po co?</a></h2>
+<ul>
+<li>przyczyny</li>
+</ul>
+<p>„Dlaczego” to sposób, w jaki wyjaśniasz swój cel oraz powód, dla którego istniejesz i postępujesz tak, jak Ty.
+Teoria Sinka polega na tym, że przekazywanie pasji leżącej u podstaw „dlaczego” jest sposobem komunikowania się 
+z mózgiem limbicznym słuchacza. Jest to część naszej anatomii, którą czujemy jako zaufanie i lojalność </p>
+<ul>
+<li>a także podejmowanie decyzji.
+Skuteczne artykułowanie „Dlaczego” to bardzo znaczący sposób komunikowania się z innymi ludźmi.
+Teoria Sinka polega na tym, że komunikowanie „dlaczego” wpada w część mózgu słuchacza. </li>
+</ul>
+<p>Właśnie dlatego Złoty Krąg jest uważany za wpływową teorię przywództwa. 
+Na poziomie organizacyjnym przekazanie „Dlaczego” jest podstawą silnej oferty wartościowej.</p>
+<h2><a class="header" href="#dlaczego-i-po-co-tu-jesteś" id="dlaczego-i-po-co-tu-jesteś">Dlaczego i po co tu jesteś?</a></h2>
+<p>W kontekście przedsiębiorczości „dlaczego” określa cel, a nawet wyższe znaczenie organizacji. 
+W moim rozumieniu ten cel zawsze odnosi się do klienta. 
+Jeśli okaże się, że pytanie o „dlaczego” nie znajduje dla ciebie przekonywujących odpowiedzi,
+zastąp „dlaczego” słowem „za co”. „Dlaczego” to centralna gwiazda polarna, która 
+nadaje Twojemu projektowi tożsamość. 
+Na przykład marka bagażowa Delsey bardzo imponująco mówi swojemu klientowi „Dlaczego”.</p>
+<h2><a class="header" href="#why-how-what---golden-circle" id="why-how-what---golden-circle">Why, How, What - Golden Circle</a></h2>
+<p>What </p>
+<p>Documentaion, Steps, how to build it?</p>
+<p>Simon Sineck</p>
+<p>golden circle</p>
+<p><img src="https://lh3.googleusercontent.com/GQEDPyTcMZvma9tEF9du-Fv3Hpt2RpIxpx6062v4GNOxZSAvS67xYbRJg1V5NNFeDzx7T1uJ30CO1A3YC0g-1s-nqHcp6pL8lWPu84DxSnzpA5MfHDMHvqN84c3YqMZxcVDP2te4" alt="" /></p>
+<p>https://www.youtube.com/watch?v=IPYeCltXpxw</p>
+<p><a href="https://www.smartinsights.com/digital-marketing-strategy/online-value-proposition/start-with-why-creating-a-value-proposition-with-the-golden-circle-model/">Creating a value proposition with the Golden Circle Model</a></p>
+<blockquote>
+<p>evelop a more distinctive proposition for their brand amongst similar service providers.</p>
+<p><a href="https://www.smartinsights.com/digital-marketing-strategy/online-value-proposition/start-with-why-creating-a-value-proposition-with-the-golden-circle-model/attachment/screen-shot-2015-10-14-at-13-17-30/"><img src="https://www.smartinsights.com/wp-content/uploads/2015/10/Screen-Shot-2015-10-14-at-13.17.30-700x498.png" alt="The Golden Circle " /></a></p>
+</blockquote>
+<p>https://www.amazon.de/Desktop-Celeron-Prozessor-Quad-Core-Mini-Computer/dp/B07QS4B7WH</p>
+<h1><a class="header" href="#docelowi-klienci-biznesowi" id="docelowi-klienci-biznesowi">docelowi klienci biznesowi</a></h1>
+<p>W pierwszej kolejności trzeba przetestować platformę
+więc naturalnym klientem, będą małe firmy, gdzie można łatwo wprowadzić całą technologię
+na lokalnym serwerze.</p>
+<p>Dlatego każda firma otrzyma server uruchamiany na:
++ MiniPC + 24GB RAM + NVM
++ aby móc podzielić, wirtualizować system, w celu szybkiego uruchomienia
++ SWITCH 10GB w celu szybkiego rozpropagowania</p>
+<p>aby obniżyć koszty, ale zapewnić dostęp do usług niezależnie od dostępu do internetu</p>
+<p>Druga opcja polega na wykorzystaniu chmury, gdzie można zalogować się
++ utworzyć profil firmy
++ wprowadzić listę i role pracowników
++ zacząć realizację projektów i mierzyć efektywność</p>
+<p>Warto przy tym porównać wcześniejsze szacowanie.
+Aby móc realnie określić, warto wcześniej wykonany i zmierzony projekt, 
+wrzucić do systemu i sprawdzić jak szybko zostanie wykonane w OneDayRun</p>
+<h2><a class="header" href="#korzyści" id="korzyści">Korzyści</a></h2>
+<h3><a class="header" href="#mierzalność" id="mierzalność">Mierzalność</a></h3>
+<p>Nie tylko efektów pracy, efektywności
+ale też efektywności komunikacji z klientem</p>
+<p>taki sposób, gdzie są małe zadania, można łatwo uzyskać dużo przejrzystych  informacji</p>
+<p>inaczej, gdy warunnki sa zmienne, każdy projekt jest bowiem inny, wymaga różnych zasobów
+dlatego sprowadzając każdy projekt do małych kroków, można kontrolować każdy krok i mierzyć jak sprawdza sie podejście
+i co można zmienić.</p>
+<h3><a class="header" href="#perfekcyjność-a-jakość-i-zadowolenie-klienta" id="perfekcyjność-a-jakość-i-zadowolenie-klienta">Perfekcyjność a jakość i zadowolenie klienta</a></h3>
+<p>Obecność inżynierów wprowadza wysoką kulturę pracy, co oznacza bardzo restrykcyjne podejście do rozwiązywania zgodnego ze schematami nabytymi na drodze edukacji.</p>
+<p>Zas to co liczy się dla firmy to efekt, tego działania.
+Jeśli jest możliwe uzyskanie zadowlających efektów, nie stosując wyśrubowanych norm, to wiele firm, chętnie zgodzi się 
+na obniżenie jakości w imię zwiększenia obrotów, gdyż nie o jakość tutaj się rozschodzi a o zadowolenie klienta, ewnetualne poprawki można zrobić
+w miarę czasu, gdy klient, będzie o nie zabiegał, ale nawet jeśli będą luki bezpieczeństwa, to nie w całym systemie
+tylko w jednym jego elemencie, a jeśli nawet w kilku to nadal nie jest to wprost do przewidzenia i zaplanowania, więc element losowości nadal jest po stronie biznesu.</p>
+<h3><a class="header" href="#dla-kogo-to-rozwiązanie" id="dla-kogo-to-rozwiązanie">Dla kogo to rozwiązanie</a></h3>
+<p>DLa wszystkich firm mających zaplecze it, które jest ich dodatkowym</p>
+<h3><a class="header" href="#kontrola-jakości" id="kontrola-jakości">Kontrola jakości</a></h3>
+<p>poprzez standaryzację procesu produkcyjnego
+można monitorować efektywność pracowników</p>
+<h3><a class="header" href="#minimalizacja-strat" id="minimalizacja-strat">Minimalizacja strat</a></h3>
+<h4><a class="header" href="#modele" id="modele">Modele</a></h4>
+<p>tworzenie małych modeli oprogramowania i danych, możliwych do łatwego definiowania
+zarządzania, customizowania, implmentacji, refaktoryzacji</p>
+<h4><a class="header" href="#ilość-ludzi-potrzebnych-w-projekcie" id="ilość-ludzi-potrzebnych-w-projekcie">Ilość ludzi potrzebnych w projekcie</a></h4>
+<p>Zamiast rozwijać techniki zarządzania, lepiej polegać na prototypowaniu skorelowanym z odpowiedzialnością 
+za wyniki tego prototypowania ograniczonego w czasie</p>
+<p>Zasoby ludzkie są ograniczone do minium, 
+makysmalna ilość 3, gdyż wówczas komunikacja jest bardzo prosta,
+nie wymaga dużego zaangażowania, staje się łatwiejsze rozsztryganie niż w p[rzypadku
+zespołu odpowiedzialnego za wiele rzeczy na raz na wielu etapach w wilu miejscach kodu.</p>
+<p>Lepiej przydzielić konkretnych ludzi do konkretnych zdań i dać im odpowiedzialność.</p>
+<h2><a class="header" href="#rynkowe-zasady-wewnątrz-firmy" id="rynkowe-zasady-wewnątrz-firmy">Rynkowe zasady wewnątrz firmy</a></h2>
+<h2><a class="header" href="#skupienie-uwagi-na-rozwiązaniach" id="skupienie-uwagi-na-rozwiązaniach">Skupienie uwagi na rozwiązaniach</a></h2>
+<h3><a class="header" href="#praca-ludzka" id="praca-ludzka">Praca ludzka</a></h3>
+<p>w tym momencie będzie ostateczcnośćią</p>
+<p>będzie też jedną z opcji
+gdyż będzie możliwe wygenerowanie roziwązania poprzez połączenie kilku modułów</p>
+<h1><a class="header" href="#one-day-run" id="one-day-run">One Day Run</a></h1>
+<p>jest wiele sposobów na realizacje projektów, jak znaleźć ten najbardziej optymalny?</p>
+<p>przy wykorzystaniu zasad modelu ODR będzie to intuicyjne, firma przyśpieszy realizacjie i zwiększy jakość
+na każdym etapie. </p>
+<h2><a class="header" href="#dlaczego-franczyza" id="dlaczego-franczyza">Dlaczego franczyza?</a></h2>
+<p>Gdyż ten model biznesu pozwala na ekspansję na cały świat w sprawdzonym modelu
+dodatkowo w branży IT jak w mało której, będzie możliwe wspołpdzielenie zasobów ,
+więc nie jest możliwe dziś łatwo określić jak bardzo duży będzie wpływ na branżę.</p>
+<h1><a class="header" href="#połaczenia" id="połaczenia">Połaczenia</a></h1>
+<p>Najbardziej optymalna ilość połączeń to 2 lub 3, 
+dlatego aby procesy w projekcie nie były zależne od większej liczby osób
+warto je podzielić, zakolejkowąć i delegować maksymalnie jednej osobie jedno zadanie:</p>
+<p>Jeśli zadanie wymaga wielu ludzi, to trzeba je podzielić tak, by możliwe było wykonanie przez wielu ludzi kolejno, a nie w jednym momencie.</p>
+<p>zmniejeszenie ilości połączeń, stworzenie systemu kolejkowania
+gdzie nie będzie tyle zależności 
+zwalnia zasoby nie tylko w sensie połączeń, ale też czasu i zaangażowania
+gdyż praca do wykonanaia jest określona, ograniczona,
+nie ma możliwości na grzebanie się z kodem, z koncepcją, z klientem</p>
+<p>są proste pytania i odpowiedzi.</p>
+<p>jeśli np. klient nie odpowiada, to nie ma problemu z prowadzeniem projektu na przód, 
+gdyż można te niewyjaśnione kwestie zostawić na potem i zajmować się tym co jest jasne i klarowen</p>
+<p>można układać plan pracy na tygodnie, z uwzględnieniem jednostek na każdy dzień
+w ten sposób łatwe jest przewidzenie opóźnieniń, bo najmnijesza jednostka to jeden dzień</p>
+<h1><a class="header" href="#obecna-praktyka-w-firmach" id="obecna-praktyka-w-firmach">Obecna praktyka w firmach</a></h1>
+<h2><a class="header" href="#superprogramiści" id="superprogramiści">Superprogramiści</a></h2>
+<ul>
+<li>mamy super pracowników, doskonale radzą sobie
+nie ma problemów, szef może im wszystko delegować a oni nawet nie mrugają okiem,</li>
+</ul>
+<h3><a class="header" href="#przyczyny" id="przyczyny">Przyczyny</a></h3>
+<p>Może być wiele przyczyn, może być to nawet prawda,
+ale może być też coś o czym szef nie wie:</p>
+<ul>
+<li>kod nie spełnia standardów</li>
+<li>polityka ukrywania problemów i wyrzucania tych, którzy nie nauczą się grać w tą chorą grę</li>
+</ul>
+<p>Nawet jeśli wszystko jest w porządku, to nie mamy pewności, kiedy przestanie
+więc czym szybciej ustandaryzujemy i będziemy mieli wgląd w to, to będzie szansa</p>
+<h3><a class="header" href="#know-how" id="know-how">Know How</a></h3>
+<p>Nawet jeśli firma działa perfekcyjnie, ale nie znasz zasady działania tej perfekcejnyj maszynki
+skąd bierze sie ten sukcees, tylko zawdięczasz ja (czasen przypadkowo) dobrze dobranemu zespołowi,
+to warto zastanowić się jak zdobyć receptę na ten sukces raz jeszcze, by zwielokrotnić zyski.
+Otworzyć nowy oddział, itp. </p>
+<h2><a class="header" href="#done-is-better-than-perfect" id="done-is-better-than-perfect">&quot;Done is better than perfect&quot;</a></h2>
+<h2><a class="header" href="#dług-techniczny" id="dług-techniczny">&quot;Dług techniczny&quot;</a></h2>
+<p>Temat dobrze znany, ale rozwiązania brak</p>
+<h2><a class="header" href="#przewidywalność" id="przewidywalność">Przewidywalność</a></h2>
+<p>Jak realizować różne projekty i mieć zawsze dobre rozwiązanie?</p>
+<h2><a class="header" href="#kontakty-z-klientem" id="kontakty-z-klientem">Kontakty z klientem</a></h2>
+<p>Kto kiedy i jak się kontaktuje?</p>
+<h1><a class="header" href="#prezentacja" id="prezentacja">Prezentacja</a></h1>
+<p>Wszystkie elemtny zmieścić na jednej kartce A4</p>
+<p>aby wszystkie ważne sprawy mozna było omówić, szybko:</p>
+<p>sposób wytwarzania Software Developmentu
+architektura mikrousług: SaaS</p>
+<p>Taki sposób gwarantuje standaryzację na zewnątrz przez API
+To co jest wewnątrz nie jest już tak istotne.</p>
+<p>Dobrze by było gdyby modele wewnątrz były zapisane językiem Mysql,
+który pozwala na opisanie struktury danych</p>
+<p>Jak opisać procesy zachodzące wenątrz?</p>
+<h2><a class="header" href="#software" id="software">Software</a></h2>
+<p>Obecny model często nie jest ustandaryzowany</p>
+<p>każda firma wma własną strukturę, standardy, politykę, kulturę</p>
+<p>Programiści nawet jak nie mają dużej swobody, to nie mają dużej wiedzy o zarządzaniu projektami
+więc są wrzuceni w machinę, w której albo nie odgrywają większej roli, albo nie odnajdują sie w niej.</p>
+<p>Standaryzacja poprzez zastosowanie modelu ułatwia wykorzystanie zasobów już teraz na każdym poziomie:</p>
+<ul>
+<li>Hardware</li>
+<li>Software</li>
+<li>Wetware</li>
+</ul>
+<p>Co istotne nie potrzeba inwestycji, tylko zmiany podejścia do realizacji projektów
+i co ważne, nie trzeba od razu tego zmienić, tylko stopniowo, tam gdzie jest to łatwiejsze
+pozowlić sobie na prototypowanie
+i na s topniowe uwalnianie potencjału ludzkiego, dla tych, którzy preferują taki sposób,
+oraz na początku zachęcenie tych, którzy będą ewangelizatorami w firmie do uczestnictwa
+za drobną opłatą, określić ich obowiązki.</p>
+<ol>
+<li>szkolenie</li>
+<li>feedback do ODR</li>
+</ol>
+<h2><a class="header" href="#dostawca-usług" id="dostawca-usług">Dostawca usług:</a></h2>
+<p>https://cloud.google.com/products/</p>
+<h1><a class="header" href="#wdrożenie" id="wdrożenie">Wdrożenie</a></h1>
+<p>Najlepiej w środwisku wielu firm
+gdzie jest potrzeba wykorzystawnia software developmentu w róznych aspektach działanaia
+gdzie nie ma jednej osoby odpowiedzialnej za software
+tylko wiele ludzi ma potrzeby i można to delegować zewnętrznej firmie</p>
+<h2><a class="header" href="#gdzie" id="gdzie">Gdzie</a></h2>
+<p>Najlepiej tam, gdzie można na bieżąco komunikować się w celu poprawy systemu
+wyjaśniania niejasności
+i wdrażania ulepszeń</p>
+<p>https://www.startplatz.de/</p>
+<p>https://www.startplatz.de/tarife/</p>
+<h2><a class="header" href="#firmy-szkolące-przyszłych-prgoramistów" id="firmy-szkolące-przyszłych-prgoramistów">Firmy szkolące przyszłych prgoramistów</a></h2>
+<p>tam można szukać kandydatów do testowania systemu od strony realizacji kodu
+ewentualnie analityków do zdefiniowania zadania.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+        
+        
+
+    </body>
+</html>
