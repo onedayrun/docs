@@ -25,3 +25,16 @@ ewentualnie analityków do zdefiniowania zadania.
 
 
 
+
+## Techniczne wskazania
+
+W pierwszej fazie model obejmuje:
+
++ SQL: MySql, PostgreSql, SQLite
++ python + API
++ nodejs + API
++ javascript, html, css
++ docker
+
+
+
