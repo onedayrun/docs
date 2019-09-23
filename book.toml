@@ -1,6 +1,13 @@
 [book]
-authors = ["tom"]
 language = "pl"
 multilingual = false
 src = "src"
 title = "Whitepaper One Day Run"
+description = "Documentation of One Day Run"
+authors = ["Tomasz Sapletta"]
+[output.html]
+additional-css = ["custom.css"]
+git-repository-url = "https://github.com/onedayrun/docs"
+git-repository-icon = "fa-github"
+[output.html.search]
+limit-results = 15
