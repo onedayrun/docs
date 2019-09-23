@@ -1,6 +1,8 @@
 # Definicja flow
 
-Założenia są takie:
+
+
+## Założenia są takie:
 +    1 projekt
     
 +    1 klient
