@@ -1,0 +1,368 @@
+<!DOCTYPE HTML>
+<html lang="pl" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>licytacja - Whitepaper One Day Run</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body class="light">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../b2b.html">b2b</a></li><li class="affix"><a href="../book.html">book</a></li><li class="affix"><a href="../golden-circle.html">golden-circle</a></li><li class="affix"><a href="../OneDayRun.html">OneDayRun</a></li><li class="affix"><a href="../prezentacja.html">prezentacja</a></li><li><a href="../1.background/obecnie.html"><strong aria-hidden="true">1.</strong> obecnie</a></li><li><ol class="section"><li><a href="../1.background/alternatywy.html"><strong aria-hidden="true">1.1.</strong> alternatywy</a></li><li><a href="../1.background/asocjacje.html"><strong aria-hidden="true">1.2.</strong> asocjacje</a></li><li><a href="../1.background/automatyzacja.html"><strong aria-hidden="true">1.3.</strong> automatyzacja</a></li><li><a href="../1.background/cena.html"><strong aria-hidden="true">1.4.</strong> cena</a></li><li><a href="../1.background/czas.html"><strong aria-hidden="true">1.5.</strong> czas</a></li><li><a href="../1.background/jakosc.html"><strong aria-hidden="true">1.6.</strong> jakosc</a></li><li><a href="../1.background/klient.html"><strong aria-hidden="true">1.7.</strong> klient</a></li><li><a href="../1.background/korzysci.html"><strong aria-hidden="true">1.8.</strong> korzysci</a></li><li><a href="../1.background/metodologia.html"><strong aria-hidden="true">1.9.</strong> Metodologia</a></li><li><a href="../1.background/miejsce.html"><strong aria-hidden="true">1.10.</strong> miejsce</a></li><li><a href="../1.background/obecnie.html"><strong aria-hidden="true">1.11.</strong> obecnie</a></li><li><a href="../1.background/ograniczenia.html"><strong aria-hidden="true">1.12.</strong> ograniczenia</a></li><li><a href="../1.background/outsourcing.html"><strong aria-hidden="true">1.13.</strong> outsourcing</a></li><li><a href="../1.background/polaczenia.html"><strong aria-hidden="true">1.14.</strong> polaczenia</a></li><li><a href="../1.background/praktyka.html"><strong aria-hidden="true">1.15.</strong> praktyka</a></li><li><a href="../1.background/psychologia.html"><strong aria-hidden="true">1.16.</strong> psychologia</a></li><li><a href="../1.background/relacje.html"><strong aria-hidden="true">1.17.</strong> relacje</a></li><li><a href="../1.background/skutecznosc.html"><strong aria-hidden="true">1.18.</strong> skutecznosc</a></li><li><a href="../1.background/zatrudnianie.html"><strong aria-hidden="true">1.19.</strong> zatrudnianie</a></li></ol></li><li><a href="../2.cechy/cechy.html"><strong aria-hidden="true">2.</strong> cechy</a></li><li><ol class="section"><li><a href="../2.cechy/dla-kogo.html"><strong aria-hidden="true">2.1.</strong> dla-kogo</a></li><li><a href="../2.cechy/gra-spolecznosciowa.html"><strong aria-hidden="true">2.2.</strong> gra-spolecznosciowa</a></li><li><a href="../2.cechy/jednostki.html"><strong aria-hidden="true">2.3.</strong> jednostki</a></li><li><a href="../2.cechy/lista-kontrolna.html"><strong aria-hidden="true">2.4.</strong> lista-kontrolna</a></li><li><a href="../2.cechy/procedura.html"><strong aria-hidden="true">2.5.</strong> procedura</a></li><li><a href="../2.cechy/process.html"><strong aria-hidden="true">2.6.</strong> process</a></li><li><a href="../2.cechy/wolny-rynek.html"><strong aria-hidden="true">2.7.</strong> wolny-rynek</a></li></ol></li><li><a href="../3.wdrozenie/wdrozenie.html"><strong aria-hidden="true">3.</strong> wdrozenie</a></li><li><ol class="section"><li><a href="../3.wdrozenie/kultura.html"><strong aria-hidden="true">3.1.</strong> kultura</a></li><li><a href="../3.wdrozenie/srodowisko.html"><strong aria-hidden="true">3.2.</strong> srodowisko</a></li><li><a href="../3.wdrozenie/strategia.html"><strong aria-hidden="true">3.3.</strong> strategia</a></li><li><a href="../3.wdrozenie/TECHNOLOGIE.html"><strong aria-hidden="true">3.4.</strong> TECHNOLOGIE</a></li></ol></li><li><a href="../4.flow/flow.html"><strong aria-hidden="true">4.</strong> flow</a></li><li><ol class="section"><li><a href="../4.flow/definicja.html"><strong aria-hidden="true">4.1.</strong> definicja</a></li><li><a href="../4.flow/licytacja.html" class="active"><strong aria-hidden="true">4.2.</strong> licytacja</a></li><li><a href="../4.flow/ocena.html"><strong aria-hidden="true">4.3.</strong> ocena</a></li><li><a href="../4.flow/tablica.html"><strong aria-hidden="true">4.4.</strong> tablica</a></li><li><a href="../4.flow/realizacja.html"><strong aria-hidden="true">4.5.</strong> realizacja</a></li><li><a href="../4.flow/review.html"><strong aria-hidden="true">4.6.</strong> review</a></li><li><a href="../4.flow/testowanie.html"><strong aria-hidden="true">4.7.</strong> testowanie</a></li></ol></li><li><a href="../5.franczyza/franczyza.html"><strong aria-hidden="true">5.</strong> franczyza</a></li><li><ol class="section"><li><a href="../5.franczyza/przyklady.html"><strong aria-hidden="true">5.1.</strong> przyklady</a></li><li><a href="../5.franczyza/struktura.html"><strong aria-hidden="true">5.2.</strong> struktura</a></li></ol></li><li><a href="../6.rozszerzenia/rozszerzenia.html"><strong aria-hidden="true">6.</strong> rozszerzenia</a></li><li><ol class="section"><li><a href="../6.rozszerzenia/hardware.html"><strong aria-hidden="true">6.1.</strong> Hardware</a></li><li><a href="../6.rozszerzenia/software.html"><strong aria-hidden="true">6.2.</strong> Software</a></li></ol></li><li><a href="../7.sprzedaz/sprzedaz.html"><strong aria-hidden="true">7.</strong> sprzedaz</a></li><li><ol class="section"><li><a href="../7.sprzedaz/klienci.html"><strong aria-hidden="true">7.1.</strong> klienci</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Whitepaper One Day Run</h1>
+
+                        <div class="right-buttons">
+                            <a href="../print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#licytacja" id="licytacja">Licytacja</a></h1>
+<p><img src="licytacja.png" alt="licytacja" /></p>
+<p>Aktynwa wersja trello</p>
+<p>gdzie można opisywac zdarzenia
+automatyzowac
+co jak sie pojawi akcja</p>
+<p>akcje wziac z api trello</p>
+<ul>
+<li>
+<p>CRUD</p>
+<ul>
+<li>Board/Space/Env/Day</li>
+<li>Column/Projekt</li>
+<li>Card/Ticket</li>
+</ul>
+</li>
+<li>
+<p>People Action</p>
+<ul>
+<li>move</li>
+<li>change </li>
+<li>add me to Ticket</li>
+</ul>
+</li>
+</ul>
+<p>w kazdym ticketie jest chat z robotem, serverem lub osoba</p>
+<p>Szablony Realizacji projektu
+https://trello.com/teams/wedding-planning</p>
+<p>http://community.uservoice.com/blog/trello-google-docs-product-management/</p>
+<p><a href="http://community.uservoice.com/blog/trello-google-docs-product-management/">How We Use Trello &amp; Google Docs to Make UserVoice Better Every Day | UserVoice Blog | UserVoice Blog</a></p>
+<blockquote>
+<p><em><a href="http://www6.uservoice.com/l/17202/2015-06-24/27dkx3"><img src="https://community.uservoice.com/wp-content/uploads/product-roadmap-prioritization-173x300.jpg" alt="product-roadmap-prioritization" /></a>Editor’s Note: Need help building an awesome product roadmap? Don’t forget to check out <a href="http://www6.uservoice.com/l/17202/2015-06-24/27dkx3">Get Your Priorities Straight! The Product Manager’s Guide to Smart Product Roadmap Prioritization</a>, our free eBook geared towards product managers facing some tough decisions as they map out the next leg of their product’s journey on their product roadmap.</em></p>
+<p><em>Get the full version for detailed advice on how to prioritize your product roadmap!</em></p>
+<hr />
+<p>Last fall I returned from vacation to find that <a href="http://www.uservoice.com">UserVoice</a>‘s Product Manager, Dejana, had replaced my precious Google Doc “Roadmap” with a <a href="http://trello.com">Trello</a> board.</p>
+<p>It should be noted that my initial reaction to this new process was not positive. My issues weren’t really with Trello but rather how we were using it. Trello is a VERY open ended product. Trello, purposefully, doesn’t prescribe a “right” way to use it so it requires you to get inside and move the furniture around a bit to get it feeling like home.</p>
+<p>However after much experimentation, I think we’ve finally arrived at a process we’re very happy with and I thought we should share how it works and what we’ve learned along the way. This will be a longer post than usual and, if you’re not into the process of delivering web products, probably a bit dry. If you prefer to skip directly to our <a href="http://community.uservoice.com/blog/trello-google-docs-product-management/#lessonslearned">lessons learned</a>, I’ll be sad but not offended.</p>
+<h3><a class="header" href="#our-process" id="our-process">Our Process</a></h3>
+<p>Our development process spans 6 different Trello boards. The focal point of all of these boards is the Current Development board. The goal of all the other boards is to feed cards (representing either an enhancement or a bug, more on these in a minute) into the Current Development board and specifically into its Next Up column. The Next Up column is THE single prioritized list that all of the product team (developers &amp; designers) looks at when they’re ready to take a new card to work on.</p>
+<p><img src="http://community.uservoice.com/wp-content/uploads/uservoice_product_process.png" alt="UserVoice product process" /></p>
+<p>Before we dive into the role of all these different boards let’s talk about the blood cells in our product development circulatory system: Trello cards.</p>
+<h5><a class="header" href="#cta-id2003897" id="cta-id2003897">[cta id=’2003897′]</a></h5>
+<h3><a class="header" href="#cards" id="cards">Cards</a></h3>
+<p><img src="http://community.uservoice.com/wp-content/uploads/uservoice_trello_card.png" alt="UserVoice Trello card" /></p>
+<p>A card represents a single story to be implemented. It could be a new enhancement, a refactoring task or a bug.</p>
+<p>Enhancement cards start out as a simple idea, 1-2 sentences long. But before they can move in development they’ll be expanded to include a link to a full-blown Google Doc “spec” and a set of wireframes or (rough) mock ups.</p>
+<p>We use the term spec fairly loosely here. These aren’t the specs you remember from your college project course or that crappy enterprise IT consulting company you worked for right out of college. The spec explains the high level customer story, why (from a business perspective) we’re addressing this, what we hope to achieve, and maybe some notes on suggested implementation (though engineers may take or leave this section at their discretion; it’s supposed to be helpful not prescriptive). A good spec will also include first-hand customer stories and a link to the related idea on our UserVoice forums.</p>
+<p>If the card is a bug then it simply has steps to reproduce the bug (which hopefully includes a screencast) and a link to the <a href="http://www.uservoice.com/helpdesk">UserVoice Helpdesk</a> ticket that originated it.</p>
+<p><a href="https://docs.google.com/a/uservoice.com/document/d/1lojmnN9fZiGUt4eC5rOQqFEV86C33QqAiE3haIeuKH4/edit"><img src="http://community.uservoice.com/wp-content/uploads/uservoice_spec.png" alt="UserVoice spec" /></a></p>
+<h3><a class="header" href="#how-the-sausage-is-made" id="how-the-sausage-is-made">How the sausage is made</a></h3>
+<p><img src="http://community.uservoice.com/wp-content/uploads/uservoice_current_dev_trello_board.png" alt="UserVoice current development Trello board" /></p>
+<p>The Current Development board is the “where the magic happens” board. It has the following columns:</p>
+<ul>
+<li><strong>Next Up</strong>
+<ul>
+<li>Prioritized list of all cards vetted and ready for design &amp; development.</li>
+<li>It’s worth noting that as a engineer or designer you’re not required to take the top card off the stack but rather the top card you feel most apt to handle.</li>
+</ul>
+</li>
+<li><strong>In Progress</strong>
+<ul>
+<li>These are the cards that are under active design or development.</li>
+<li>Once you take a card you “put your face on it” (assign it to yourself). Dev etiquette is that you should never have your face on more than 2 cards at a time: 1 major project and 1 minor.</li>
+<li>When an engineer takes a card they assign a due date on it to let others know the “expected” delivery date of this card to QA. A quick scan of our board tells me that this rule is more aspirational than executed upon. <img src="https://s.w.org/images/core/emoji/12.0.0-1/svg/1f642.svg" alt="🙂" /></li>
+</ul>
+</li>
+<li><strong>QA</strong>
+<ul>
+<li>When the engineer thinks they’ve completed the story, they’ll deploy it to staging (or sometimes to production but hide the feature behind a “feature flag”) and drag the card to QA.  At this point it our QA manager and Head of UX are responsible for taking a look and verifying that everything looks okay for this to go live.</li>
+<li>As mentioned previously, If the card is an enhancement project that’s quite large we’ll spin up a whole new board dedicated to issues that came up during QA of that project. The project card will stay in QA until all the cards on the project specific QA board are done.</li>
+</ul>
+</li>
+<li><strong>Launchpad</strong>
+<ul>
+<li>These cards have been reviewed by QA and are ready to be deployed (but not necessarily launched, but more on that in a minute) and there’s probably a GitHub Pull Request associated with it (which will be merged into master by the person that opened the pull request. It’s worth noting that there is no central chokepoint for merging into master: everyone can do it).</li>
+<li>If the card is a bug or refactoring task it will be deployed to production immediately (but not after 3p PST unless you, as the deployer, are willing to be around for the next 90 minutes to monitor any issues that come up).</li>
+<li>If the card is an enhancement then it will be deployed to production but will be hidden from end-users by a “feature flag”. Feature flags are named conditional bits that can be turned on, on a per-account basis, to grant access to the new feature. We’ll immediately turn it on for our own UserVoice account and any customers selected by the customer team for early access but otherwise it falls to Marketing to turn on for all accounts when it’s officially launched.</li>
+</ul>
+</li>
+<li><strong>Live (Week #)</strong>
+<ul>
+<li>These cards have been deployed and are no longer hidden behind feature flags.</li>
+<li>The only people who move cards to “Live” (essentially our Completed list) are the Product Manager (for enhancements) and the Bug Reporter (for bugs). This helps ensure that the feedback loop is completed before cards move out of sight.</li>
+<li>Each week has it’s own Live column so we can track what got launched when.</li>
+</ul>
+</li>
+</ul>
+<p>In addition we use 3 labels that can be applied to a card:</p>
+<ul>
+<li><strong>Bug</strong></li>
+<li><strong>Staging – Deployed to staging</strong></li>
+<li><strong>Production – Deployed to production</strong></li>
+</ul>
+<p>That was easy right? It’s very much a Kanban style approach to development. Now let’s dive into how cards get onto this board in the first place.</p>
+<h3><a class="header" href="#mommy-where-do-cards-come-from" id="mommy-where-do-cards-come-from">Mommy, where do cards come from?</a></h3>
+<p>New cards can come from one of 4 different boards:</p>
+<ul>
+<li>
+<p><strong>Product Roadmap</strong></p>
+<ul>
+<li>This has all the major projects for each quarter looking roughly 3 quarters ahead. These big projects are moved to the Planning board once that quarter begins.</li>
+</ul>
+</li>
+<li>
+<p><strong>Inbox</strong></p>
+<ul>
+<li>There are two columns on here: one for ideas from anyone in the company and another for customer ideas (related to <a href="http://www.uservoice.com/helpdesk">UserVoice Helpdesk</a> support tickets or ideas submitted to our <a href="http://www.uservoice.com/feedback">UserVoice customer feedback forums</a>).</li>
+<li>The ideas on this board are reviewed once a week during our Inbox Review meeting (see below for more details).</li>
+</ul>
+</li>
+<li>
+<p><strong>Bugs</strong></p>
+<ul>
+<li>There are 3 columns here:
+<ul>
+<li>Inbox – unvetted reported bugs.</li>
+<li>Needs input – We’ve had issues reproducing the issue and the original reporter needs to provide more info.</li>
+<li>Accepted – Yes, this is almost most certainly a bug.</li>
+</ul>
+</li>
+<li>If a bug moves to Accepted and is considered “Critical” by the customer team (you can see how we decide that by reading our <a href="http://www.uservoice.com/blog/entries/off-hours-critical-issue-escalation-process/">critical issue escalation process</a>) then it moves immediately to the Current Development board and the “dev on call” is alerted.</li>
+<li>If the bug is not critical it stays in Accepted until the Head of Customer Service moves it into the Next Week column which is the bugs that will be fixed next week (duh). The caveat is that he’s only allowed to pick 7 bugs per week. Why only 7 you ask? Because there are always bugs and the customer team always wants them all fixed but one of our major learnings was to set a constant throttle of how much time we’d devote to (non-critical) bug fixing.</li>
+</ul>
+</li>
+<li>
+<p><strong>Engineering</strong></p>
+<ul>
+<li>We keep a list of areas that we think might need refactoring.  Each list is a category (eg, Backend, Frontend, Tests, Infrastructure), and each card is a refactoring project or other non-customer-facing project.</li>
+<li>Engineers take small cards when they feel like it and add them to in progress; larger cards need to be planned in the Next Up list</li>
+</ul>
+</li>
+</ul>
+<h3><a class="header" href="#who-said-central-planning-doesnt-work-planning-board" id="who-said-central-planning-doesnt-work-planning-board">Who said central planning doesn’t work? (Planning board)</a></h3>
+<p><img src="http://community.uservoice.com/wp-content/uploads/uservoice_planning_trello_board.png" alt="UserVoice planning Trello board" /></p>
+<p>The Planning board is where myself, our PM, and head of UX spend the majority of our time. It has the following columns:</p>
+<ul>
+<li><strong>Next Up</strong>
+<ul>
+<li>This is our roughly prioritized list of the next projects we want to spec out for development</li>
+</ul>
+</li>
+<li><strong>Spec</strong>
+<ul>
+<li>This means “someone needs to write a spec”. The card at this point is usually just a rough idea.</li>
+<li>We use Google Docs for specs and heavily rely on contextual comments to asynchronously discuss any contentious points with other members of the team. Any sufficiently complex contentious concept will be fleshed out in an impromptu design meeting (more on this in next section).</li>
+</ul>
+</li>
+<li><strong>Design</strong>
+<ul>
+<li>Means that the card needs a designer to take a look at it, duh. This doesn’t necessarily mean that a wireframe or mockup will be made as the design stage isn’t just about the look of it, but very much about taking the spec requirements and ironing out design concepts, usability, workflows, and impact on existing functionality – essentially vetting it and hammering out any show-stopping kinks before it goes into the dev cycle. (Also, if the spec needs to go back to the drawing board, it’s sent back to the Spec list.)</li>
+</ul>
+</li>
+<li><strong>Ready</strong>
+<ul>
+<li>We have spec that’s been reviewed by the idea creator and by the design team. We optionally have a wireframe or other needed artifacts. This is ready to be moved to the Next Up column on Current Development (after it’s reviewed at the Product Planning meeting).</li>
+</ul>
+</li>
+</ul>
+<p>On every other board cards move almost exclusively only from left to right but not on the Planning board. It’s not uncommon for a card to go from Design or Ready back to Spec one or more times before it’s finally moved to Current Development.</p>
+</blockquote>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../4.flow/definicja.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../4.flow/ocena.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../4.flow/definicja.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="../4.flow/ocena.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

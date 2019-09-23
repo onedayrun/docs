@@ -1,0 +1,296 @@
+<!DOCTYPE HTML>
+<html lang="pl" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>tablica - Whitepaper One Day Run</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body class="light">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../b2b.html">b2b</a></li><li class="affix"><a href="../book.html">book</a></li><li class="affix"><a href="../golden-circle.html">golden-circle</a></li><li class="affix"><a href="../OneDayRun.html">OneDayRun</a></li><li class="affix"><a href="../prezentacja.html">prezentacja</a></li><li><a href="../1.background/obecnie.html"><strong aria-hidden="true">1.</strong> obecnie</a></li><li><ol class="section"><li><a href="../1.background/alternatywy.html"><strong aria-hidden="true">1.1.</strong> alternatywy</a></li><li><a href="../1.background/asocjacje.html"><strong aria-hidden="true">1.2.</strong> asocjacje</a></li><li><a href="../1.background/automatyzacja.html"><strong aria-hidden="true">1.3.</strong> automatyzacja</a></li><li><a href="../1.background/cena.html"><strong aria-hidden="true">1.4.</strong> cena</a></li><li><a href="../1.background/czas.html"><strong aria-hidden="true">1.5.</strong> czas</a></li><li><a href="../1.background/jakosc.html"><strong aria-hidden="true">1.6.</strong> jakosc</a></li><li><a href="../1.background/klient.html"><strong aria-hidden="true">1.7.</strong> klient</a></li><li><a href="../1.background/korzysci.html"><strong aria-hidden="true">1.8.</strong> korzysci</a></li><li><a href="../1.background/metodologia.html"><strong aria-hidden="true">1.9.</strong> Metodologia</a></li><li><a href="../1.background/miejsce.html"><strong aria-hidden="true">1.10.</strong> miejsce</a></li><li><a href="../1.background/obecnie.html"><strong aria-hidden="true">1.11.</strong> obecnie</a></li><li><a href="../1.background/ograniczenia.html"><strong aria-hidden="true">1.12.</strong> ograniczenia</a></li><li><a href="../1.background/outsourcing.html"><strong aria-hidden="true">1.13.</strong> outsourcing</a></li><li><a href="../1.background/polaczenia.html"><strong aria-hidden="true">1.14.</strong> polaczenia</a></li><li><a href="../1.background/praktyka.html"><strong aria-hidden="true">1.15.</strong> praktyka</a></li><li><a href="../1.background/psychologia.html"><strong aria-hidden="true">1.16.</strong> psychologia</a></li><li><a href="../1.background/relacje.html"><strong aria-hidden="true">1.17.</strong> relacje</a></li><li><a href="../1.background/skutecznosc.html"><strong aria-hidden="true">1.18.</strong> skutecznosc</a></li><li><a href="../1.background/zatrudnianie.html"><strong aria-hidden="true">1.19.</strong> zatrudnianie</a></li></ol></li><li><a href="../2.cechy/cechy.html"><strong aria-hidden="true">2.</strong> cechy</a></li><li><ol class="section"><li><a href="../2.cechy/dla-kogo.html"><strong aria-hidden="true">2.1.</strong> dla-kogo</a></li><li><a href="../2.cechy/gra-spolecznosciowa.html"><strong aria-hidden="true">2.2.</strong> gra-spolecznosciowa</a></li><li><a href="../2.cechy/jednostki.html"><strong aria-hidden="true">2.3.</strong> jednostki</a></li><li><a href="../2.cechy/lista-kontrolna.html"><strong aria-hidden="true">2.4.</strong> lista-kontrolna</a></li><li><a href="../2.cechy/procedura.html"><strong aria-hidden="true">2.5.</strong> procedura</a></li><li><a href="../2.cechy/process.html"><strong aria-hidden="true">2.6.</strong> process</a></li><li><a href="../2.cechy/wolny-rynek.html"><strong aria-hidden="true">2.7.</strong> wolny-rynek</a></li></ol></li><li><a href="../3.wdrozenie/wdrozenie.html"><strong aria-hidden="true">3.</strong> wdrozenie</a></li><li><ol class="section"><li><a href="../3.wdrozenie/kultura.html"><strong aria-hidden="true">3.1.</strong> kultura</a></li><li><a href="../3.wdrozenie/srodowisko.html"><strong aria-hidden="true">3.2.</strong> srodowisko</a></li><li><a href="../3.wdrozenie/strategia.html"><strong aria-hidden="true">3.3.</strong> strategia</a></li><li><a href="../3.wdrozenie/TECHNOLOGIE.html"><strong aria-hidden="true">3.4.</strong> TECHNOLOGIE</a></li></ol></li><li><a href="../4.flow/flow.html"><strong aria-hidden="true">4.</strong> flow</a></li><li><ol class="section"><li><a href="../4.flow/definicja.html"><strong aria-hidden="true">4.1.</strong> definicja</a></li><li><a href="../4.flow/licytacja.html"><strong aria-hidden="true">4.2.</strong> licytacja</a></li><li><a href="../4.flow/ocena.html"><strong aria-hidden="true">4.3.</strong> ocena</a></li><li><a href="../4.flow/tablica.html" class="active"><strong aria-hidden="true">4.4.</strong> tablica</a></li><li><a href="../4.flow/realizacja.html"><strong aria-hidden="true">4.5.</strong> realizacja</a></li><li><a href="../4.flow/review.html"><strong aria-hidden="true">4.6.</strong> review</a></li><li><a href="../4.flow/testowanie.html"><strong aria-hidden="true">4.7.</strong> testowanie</a></li></ol></li><li><a href="../5.franczyza/franczyza.html"><strong aria-hidden="true">5.</strong> franczyza</a></li><li><ol class="section"><li><a href="../5.franczyza/przyklady.html"><strong aria-hidden="true">5.1.</strong> przyklady</a></li><li><a href="../5.franczyza/struktura.html"><strong aria-hidden="true">5.2.</strong> struktura</a></li></ol></li><li><a href="../6.rozszerzenia/rozszerzenia.html"><strong aria-hidden="true">6.</strong> rozszerzenia</a></li><li><ol class="section"><li><a href="../6.rozszerzenia/hardware.html"><strong aria-hidden="true">6.1.</strong> Hardware</a></li><li><a href="../6.rozszerzenia/software.html"><strong aria-hidden="true">6.2.</strong> Software</a></li></ol></li><li><a href="../7.sprzedaz/sprzedaz.html"><strong aria-hidden="true">7.</strong> sprzedaz</a></li><li><ol class="section"><li><a href="../7.sprzedaz/klienci.html"><strong aria-hidden="true">7.1.</strong> klienci</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Whitepaper One Day Run</h1>
+
+                        <div class="right-buttons">
+                            <a href="../print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2><a class="header" href="#tablica" id="tablica">Tablica</a></h2>
+<p>https://github.com/users/tom-sapletta-com/projects/1?add_cards_query=is%3Aopen</p>
+<ul>
+<li>Tablica zadania do wykonania na dzisiaj</li>
+<li>Zadania na [data]</li>
+<li>Zadania zależne od wyniku zdarzenia [task]</li>
+</ul>
+<p>Our admin and management board is fairly straightforward. Each team member has three lists. We can assign cards to ourselves or to each other as well as converse about issues involved in any of those tasks.</p>
+<pre><code>To do list – Cards are placed here to assign new tasks
+
+Doing –  The tasks that the person is currently working on.
+
+Done list – Completed tasks, archived at the end of each month.
+</code></pre>
+<p>Our content marketing board has three types of lists:</p>
+<pre><code>Content Ideas – This is just where we store all of our content ideas and a place we can look through if we want to start on a new post.
+
+Upcoming posts for the month – These are ideas for posts that we want to move forward with on the month.
+
+Content published for the month –  This includes both on and off site content
+
+Guest ideas for the podcast – A bucket for potential guests where we log some brief notes on why we think they would be a good person to reach out to.
+</code></pre>
+<p>Trello has recently added an editorial calendar feature that is popular tool for content management and planning with top news sites like Mashable, ReadWrite, and the Changlog. They use this calendar internally as well to plan out and create content for their blog. They use colored labels to represent idea topics and have 9 lists to track the status of the article and allowing different team members to contribute when they are needed. You can check out a detailed post on this process here.</p>
+<pre><code>Article Ideas
+Researching
+On hold
+Writing
+Editing and graphics
+Scheduled
+Promotion
+Ready to publish
+Published
+</code></pre>
+<p>We have a workflow to track and communicate with our guest writers. When working with a diverse team of guest writers, it helps to have an overview of what each writer is working on and where they are in the process. Instead of being focused on time frame like our content planning board it is optimized to make communicating with out guest writers easy and centralized.</p>
+<pre><code>Ideas up for grabs – Any of our guest writers can pick up these ideas. We try and keep this list populated with a few different themes. Most of the ideas in this list a more generalized ideas and themes, which gives the guest writer a little bit of space to add their own expertise or creativity, which typically makes for better content.
+Articles in progress – We assign a card to a specific writer and communicate with them on the card as they progress. Our writers use google docs so it is easy to attach and link their articles right in the card giving us quick access.
+Completed articles – Once the articles are approved and uploaded to wordpress we place them in this list.
+Resources – This is a static list with links to our processes and procedures relevant to the guest writers. I also keep a checklist here for when the guest post is ready to be uploaded into WordPress I copy this card and assign it to them so they can have the expectations for what a completed post will look like for us, and save a lot of back and fourth.
+</code></pre>
+<p>Task Automation</p>
+<p>We use Zapier to create automatic reminders for recurring tasks.</p>
+<p>We have a library of processes in Google Drive that give granular instructions on completing the required task. Each card that we create in Zapier is automatically linked to a Google Doc that has precise instructions on how to carry that task out.</p>
+<p>We use this to create recurring tasks for our admin team:</p>
+<pre><code>Checking email inboxes for spam
+Daily bookkeeping
+Checking for overtime and processing payroll
+Checking PayPal balances and making transfers if necessary
+Paying affiliates monthly
+Drafting our performance updates to staff
+</code></pre>
+<p>Using zaps to automate card creation keeps us on track for these processes and frees up time and energy to focus on higher level tasks and projects.</p>
+<p>Related article: Our exact hands off process for hiring developers offshore</p>
+<p>Dan used Trello to collect and categorize his ideas for The 7 Day Startup. He would add ideas that he wanted to include into the book as cards then create lists for themes or chapters in the book.</p>
+<p>As the lists continued to grow he used it as an outline for creating his book. Since he already had a lot of the content written as blog posts before, this Trello board helped him map it out and get through the actual writing of the book quickly.</p>
+<p>Dans first business book | Trello 2015-01-19 11-03-22</p>
+<p>Once all the ideas were categorized, Dan pulled them into a list of chapters to write in a new board. In that board he had lists for each step of the process (i.e. write rough draft, self-review, peer review, send to editor). This made it a more motivating way of working on the book so he could see each chapter progress as he completed the book.</p>
+<p>Product Development</p>
+<p>Trello and User Voice use Trello to track bugs and new feature development.</p>
+<p>Trello</p>
+<p>Trello likes to keep things simple and only maintain one internal board, so there is only one place to keep track of things.</p>
+<pre><code>Incoming Bugs – The collect bug reports from twitter, email or something that employees identify.
+
+Bugs for this week – The top priority bugs move to this list to be fixed as quickly as possible.
+
+Planning – This list is for new features that need addition planning, research or general figuring out how it will work.
+
+Doing – Bugs or features devs are currently working on.
+
+Waiting for test/review – Features and bugs awaiting code testing and QA.
+
+Ready for merge – These are moved to a staging server and tested to see if it works well live or causes problems elsewhere in the app.
+
+Unshippable – If a new bug is discovered that makes the card unfit for release.
+</code></pre>
+<p>User Voice</p>
+<p>User Voice has a series of boards that all feed into a single board labeled current development.</p>
+<p>Cards are created on four boards:</p>
+<pre><code>Product roadmap – Major projects for each quarter.
+Inbox – Tickets from helpdesk or feedback forums.
+Engineering – Ideas of currently existing areas that could be improved.
+Bugs – Bugs are collected, vetted, and determined in they are critical here.
+</code></pre>
+<p>Public Trello Boards</p>
+<p>The team at Trello use a public board to interact with customers, give a high level view of what they are working on, and allow for voting and commenting on new features.</p>
+<p>Similar to our content marketing board, they list the new features and updates that go live each month and keep a history of each month.</p>
+<p>https://wpcurve.com/trello-for-project-management/</p>
+<p>https://trello.com/teams/wedding-planning</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../4.flow/ocena.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../4.flow/realizacja.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../4.flow/ocena.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="../4.flow/realizacja.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

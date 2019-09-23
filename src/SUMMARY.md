@@ -16,14 +16,15 @@
     + [cena](1.background/cena.md)
     + [czas](1.background/czas.md)
     + [jakosc](1.background/jakosc.md)
+    + [klient](1.background/klient.md)
     + [korzysci](1.background/korzysci.md)
     + [Metodologia](1.background/metodologia.md)
     + [miejsce](1.background/miejsce.md)
+    + [obecnie](1.background/obecnie.md)
     + [ograniczenia](1.background/ograniczenia.md)
     + [outsourcing](1.background/outsourcing.md)
     + [polaczenia](1.background/polaczenia.md)
     + [praktyka](1.background/praktyka.md)
-    + [klient](1.background/klient.md)
     + [psychologia](1.background/psychologia.md)
     + [relacje](1.background/relacje.md)
     + [skutecznosc](1.background/skutecznosc.md)
@@ -32,8 +33,12 @@
 
 ## 2. Cechy
 + [cechy](2.cechy/cechy.md)
+    + [dla-kogo](2.cechy/dla-kogo.md)
     + [gra-spolecznosciowa](2.cechy/gra-spolecznosciowa.md)
     + [jednostki](2.cechy/jednostki.md)
+    + [lista-kontrolna](2.cechy/lista-kontrolna.md)
+    + [procedura](2.cechy/procedura.md)
+    + [process](2.cechy/process.md)
     + [wolny-rynek](2.cechy/wolny-rynek.md)
 
 
@@ -48,7 +53,9 @@
 ## 4. flow
 + [flow](4.flow/flow.md)
     + [definicja](4.flow/definicja.md)
+    + [licytacja](4.flow/licytacja.md)
     + [ocena](4.flow/ocena.md)
+    + [tablica](4.flow/tablica.md)
     + [realizacja](4.flow/realizacja.md)
     + [review](4.flow/review.md)
     + [testowanie](4.flow/testowanie.md)
@@ -64,10 +71,15 @@
     + [Software](6.rozszerzenia/software.md)
 
 ## 7.sprzedaz
-
 + [sprzedaz](7.sprzedaz/sprzedaz.md)
     + [klienci](7.sprzedaz/klienci.md)
-
+<!--8.Procesy-->
+<!--ksiegowosc.md-->
+<!--9.sprzedaz-->
+<!--franczyza.md-->
+<!--klienci.md-->
+<!--produkty-wyprodukowane-przez-odr.md-->
+<!--sprzedaz.md-->
 <!--## 9. systemy-->
 <!--apibuild.md-->
 <!--onedayrun.md-->

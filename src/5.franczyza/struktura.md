@@ -1,3 +1,4 @@
+# struktura
 
 
 ## System of Company
