@@ -1,0 +1,3 @@
+# OneDayRun
+
+model franczyzy
