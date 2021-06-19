@@ -1,5 +1,36 @@
-# docs
 ![One Day Run .com](src/img/ondedayrun1-200.png)
+
+# docs.oneday.run
+
++ [logo.oneday.run](https://logo.oneday.run/)
++ [www.oneday.run](https://logo.oneday.run/)
++ [docs.oneday.run](https://logo.oneday.run/)
+
+Landing Page oneday.run
+
+[Memogra logo](logo.oneday.run)
+[Memogra Dokumentacja](docs.oneday.run)
+
+## install on VPS
+
+    git clone https://github.com/memogra/www.git
+    
+    sh install.sh
+    
+    sh status.sh
+    
+    sh start.sh
+
+## TODO
+    + apicra
+        + nginx
+        + config
+        + nodejs service testing.sh
+    + certbot    
+    + SSL connection    
+
+
+
 
 https://docs.onedayrun.com/
 
@@ -209,3 +240,11 @@ Upgrade
 https://pl.linkedin.com/in/wseliga
 
 
+
+
+---
++ [edit](https://github.com/onedayrun/docs/edit/master/README.md)
++ [git](https://github.com/onedayrun/docs)
+```
+https://github.com/onedayrun/docs.git
+```
