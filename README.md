@@ -6,10 +6,32 @@
 + [www.oneday.run](https://logo.oneday.run/)
 + [docs.oneday.run](https://logo.oneday.run/)
 
-Landing Page oneday.run
+
+### Landing Page oneday.run
 
 [Memogra logo](logo.oneday.run)
 [Memogra Dokumentacja](docs.oneday.run)
+
+
+To oferta marketplacu gdzie można uruchamiać swoje aplikacje
+
+Każdy user dostaje swój własny marketplace, swój serwer wirtuany, na którym są uruchamiane aplikacje.
+
+
+### role:
+
++ user
++ manager
++ devops
+
+
+### action
+
++ run on remote server
++ run local on pc 
++ logs
++ monitor
+
 
 ## install on VPS
 
